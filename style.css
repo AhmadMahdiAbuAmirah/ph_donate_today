@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------- Common Utilities -------------*/
+.container {
+    width: 70vw;
+    padding: 5vh 0 1vh;
+    margin: auto;
+}
+
+.overlay {
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 1.3em;
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    background-color: #FF5959;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.btn_2 {
+    display: inline-block;
+    padding: .7em 1.3em;
+    transform:translateY(.07em);
+    text-decoration: none;
+    color: white;
+    background-color: #FF5959;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.text_area {
+    width: 50%;
+    margin: auto;
+    padding: 10vh 0 5vh 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.text_area h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text_area p{
+    color: #707070;
+} 
+
+.bg_1 {
+    background-color: rgba(79, 157, 166, 0.1);
+}
+
+.bg_2 {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+.bg_3 {
+    background-color: rgba(255, 244, 214, 1);
+}
+
+
+
+/* Components wise styling */
+
+/* <!-- header section --> */
+#header {
+    background: url(./donate-today/images/donation7.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+}
+#header h1 {
+    color: white;
+    margin-bottom: .4em;
+    font-size: 64px;
+}
+#header p {
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+/* <!-- Dontaion amount Selection Section --> */
+.all_plans {
+    display: flex;
+    justify-content: center;
+    
+ }
+
+.plan {
+    padding: 1em;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #707070;
+    text-align: center;
+ }
+
+.all_plans input {
+    display: none;
+}
+
+ input[id = "100tk"]:checked ~ label[for="100tk"] .plan, input[id = "200tk"]:checked ~ label[for="200tk"] .plan, input[id = "500tk"]:checked ~ label[for="500tk"] .plan, input[id = "1000tk"]:checked ~ label[for="1000tk"] .plan, input[id = "5000tk"]:checked ~ label[for="5000tk"] .plan {
+    color: #FF5959;
+    background-color: #FFEEEE;
+    border: 2px #FF5959 solid;
+    border-radius: 5px;
+ }
+
+.plan:hover {
+    color: #FF5959;
+    background-color: #FFEEEE;
+    border: 2px #FF5959 solid;
+    border-radius: 5px;
+    transform: scale(.95);
+ }
+ 
+#donation_form form>input {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    border-bottom: 1px #cdcccc solid;
+}
+
+#donation_form form>input::placeholder{
+    color: #B3B3B3;
+  }
+
+.wider {
+    width: 70%;
+}
+
+
+
+/* -- Donation Plan Section   */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    padding: 3rem 1rem;
+    width: 30%;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card p {
+    font-weight: 100;
+    color: #707070;
+}
+
+
+
+/* <!-- Bonus Section-1 >> */
+
+#methods {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(79, 157, 166, 0.1);
+    padding: 3vh;
+}
+
+.method {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin: 2vh;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.method_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1vh 1vw;
+    background-color: #FF5959;
+    border-radius: 5px 5px 0 0;
+}
+
+.method_head i {
+    border-radius: 100%;
+    background-color: rgba(73, 10, 10, 0.238);
+    padding: 1vh;
+}
+
+.method_body {
+    padding: 2vh;
+}
+
+
+
+/* <!-- Bonus Section-2>> Email Subscribe section--> */
+.subscribe_form {
+    width: 60%;
+    margin: auto;
+    padding: 7vh 0;
+    background-color:#FFF4D6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.subscribe_form input {
+    width: 300px;
+    color: AA9F9F;
+    background-color: #D9D9D9;
+    padding: 1em 1.3em;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.subscribe_form input::placeholder {
+    color: AA9F9F;
+}
+
+
+/* <!-- Footer Section  --> */
+footer {
+    margin-top: 10vh;
+    height: 15vh;
+    background-color: #000000;
+    width: 100vw;
+}
+
+.brand_text {
+    color: #FF5959;
+    font-family: 'Lobster', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 1.5vh;
+}
+
+.footer_text {
+    text-align: center;
+    padding: 3vh;
+}
+
+
+
