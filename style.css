@@ -74,7 +74,7 @@ body {
 
 /* <!-- header section --> */
 #header {
-    background: url(./donate-today/images/donation7.jpg) no-repeat center;
+    background: url(./img/donation7.jpg) no-repeat center;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
